@@ -33,10 +33,10 @@ st.markdown("---")
 # Load the saved model and vectorizer
 
 sys.path.append(os.path.dirname(__file__))
-data_dir = Path(__file__).parent / 'cache'
-lda_model = data_dir / 'lda_model.joblib'
-vectorizer = data_dir / 'vectorizer.joblib'
-list_topics = data_dir / 'list_topics.joblib'
+cache_dir = Path(__file__).parent / 'cache'
+lda_model = cache_dir / 'lda_model.joblib'
+vectorizer = cache_dir / 'vectorizer.joblib'
+list_topics = cache_dir / 'list_topics.joblib'
 
 lda = joblib.load(lda_model)
 vectorizer = joblib.load(vectorizer)
