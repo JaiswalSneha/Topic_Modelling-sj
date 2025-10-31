@@ -274,6 +274,9 @@ if ngram_button:
 
 #===================================================================
     import joblib
+    
+    import pathlib
+    pathlib.WindowsPath = pathlib.PosixPath
 
     sys.path.append(os.path.dirname(__file__))
     data_dir = Path(__file__).parent / 'cache'

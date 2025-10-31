@@ -35,12 +35,12 @@ st.markdown("---")
 sys.path.append(os.path.dirname(__file__))
 cache_dir = Path(__file__).parent / 'cache'
 lda_model = cache_dir / 'lda_model.joblib'
-vectorizer = cache_dir / 'vectorizer.joblib'
-list_topics = cache_dir / 'list_topics.joblib'
+vectorizer_path = cache_dir / 'vectorizer.joblib'
+list_topics_path = cache_dir / 'list_topics.joblib'
 
 lda = joblib.load(lda_model)
-vectorizer = joblib.load(vectorizer)
-list_topics = joblib.load(list_topics)
+vectorizer = joblib.load(vectorizer_path)
+list_topics = joblib.load(list_topics_path)
 
 import re
 import nltk
