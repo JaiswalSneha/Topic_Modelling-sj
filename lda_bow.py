@@ -206,7 +206,7 @@ if ngram_button:
     lda_html = cache_dir / 'lda.html'
     # Save to HTML and display in Streamlit
     pyLDAvis.save_html(lda_vis, str(lda_html))
-    with open("lda.html", "r", encoding="utf-8") as f:
+    with open(str(lda_html), "r", encoding="utf-8") as f:
         html_content = f.read()
 
     st.components.v1.html(html_content, height=800)
