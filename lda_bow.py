@@ -278,11 +278,11 @@ if ngram_button:
     sys.path.append(os.path.dirname(__file__))
     data_dir = Path(__file__).parent / 'cache'
     lda_model = data_dir / 'lda_model.joblib'
-    vectorizer = data_dir / 'vectorizer.joblib'
-    list_topics = data_dir / 'list_topics.joblib'
+    vectorizer_path = data_dir / 'vectorizer.joblib'
+    list_topics_path = data_dir / 'list_topics.joblib'
 
     # Save LDA model and vectorizer
     joblib.dump(lda, lda_model)
-    joblib.dump(vectorizer, vectorizer)
-    joblib.dump(list_topics, list_topics)
+    joblib.dump(vectorizer, vectorizer_path)
+    joblib.dump(list_topics, list_topics_path)
     
