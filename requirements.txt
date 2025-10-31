@@ -1,0 +1,14 @@
+bertopic==0.17.3
+gensim==4.3.3
+joblib==1.4.2
+matplotlib==3.10.7
+nltk==3.9.2
+numpy==2.3.4
+pandas==2.3.3
+plotly==6.0.0
+pyLDAvis==3.4.1
+pyLDAvis==3.4.1
+scikit_learn==1.7.2
+sentence_transformers==5.1.1
+streamlit==1.50.0
+wordcloud==1.9.4
